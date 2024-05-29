@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website with payment</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Ecommerce</a>
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsV_zpBajgd4KdQcj08t6aVO5D1MWERxTx4zis3Qb9PTjO9twt0nAU60mgqGg7yg6d3DFy5GxHFpxiRqPf9QISgokPjLW72JO_813NEm_4yE814KakOPKo25daBp-Vso1TuhTvfunoPqbJOdn2KBi4F6r1HUq_nF9aHzFRxeZIBUEn6g1EIJoytzKPIiRs/s320/product1.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">ADICOLOR SEASONAL</h2>
+                <span class="price">$50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlpfxlI1MiITq-r8vvnBbgQVKZ1IBdGloFBF4_Cjsx0eQhEo4KTXN1m-So0gfy3kulXK9ueEQUUYL-6RtFCgIE_7dP_em96UnUyRJtcnv7i274j7gkYmuZrubR0V2dabBiuca5A1ySwEjcSsCakKvtPrJALwKEgh3fF1nEXC-vq0d0AdWZrw63D9ML4KgD/s320/product2.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">SATURDAY BACKPACK</h2>
+                <span class="price">$80</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoFtYe6s3r5KdxTf-N0Ufx0QUkRbvEF8fsehGBeoa3CCF1acpDoQEoqYRy2OfPQ0WVXehE-jfSUGwsrbox3g3CUVdUFlEvFp8u3rD6arEuPysXGNDIpdpNFDYf05M9HUuvI6lxHFRatX6h5mX7sf627oD-eEm48ZRjD0IcVZT_MYhiFvEkFmYznLr8_Am-/s320/product3.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">ULTIMATE HAT</h2>
+                <span class="price">$24.99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwVzLTxjjgQwXw51TOmErRzdcQKiEggFhhiuhD1-30uO-0pLBu33rVxcL1dL2Rejca7BkLm1Vx-Z1LZPadlsZBd14ZyplX3tAUfPVRy2jRvCzkcJsI_j-Gew2QCJWDTUshlEHOkwp41CV-WGgay-f0I13kmQyFIwV1d0LnaSNgXs-be3Pl9AP63_22o6gC/s320/product4.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">MESSI GOAT TEE</h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMnOU_AQuHoaSCS0Y7cnjajxtE0n2LwJLnbslafW8R09vXhgdLE9DzWldgPpgr7HLv1FYnrebvm4EiSfkHFaniXhDutuZ0pYDRc0eJ_j9YwPa1WM4tmRPL1UcQCWdoBGNhDRj7ljIroNvXmHoLZOuaOPMwj5-Tr3b_eJx5FHT4hOJUNSQETJCutA5l3Nnx/s320/product5.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">ADICOLOR HOODIE</h2>
+                <span class="price">$74.99</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQqTrd5tPsP2sL39RQ-NS4sqs_DMtzVcnZsTDaQhiIBTJpubTGgaS6U4DL8pY4hTGq42LfqozyEYW-fqLnuaCUlX-zp1ljSPLP9m8jr_QOCM0zjmOJuOXIobwAk79WcbKAHTKW_hiYaz67A8QQut28p66ik7DNI5mFgcWnu89h_EcsDR57e_UoSvl2jtUR/s320/product6.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">ADIDAS EARBUDS</h2>
+                <span class="price">$50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm9WCdsD0qgNG7Lgw4rOPiBicWd1qAG8pNQN0KI3I0-F_9deiTXxwefyo5OWLJx_qmI5YVP7WvYOoRqvukGioYmKg9UOTLzrKo4qp-TYjFf2Dg3NdUtDmaruizv_Ct1g3bY1kbnP1QCUUzQwGbAlcMoJiMamqPOHziDEmzSPVVmAvFIinW-XcN-YQiPjkR/s320/product7.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">METAL BOTTLE 1L</h2>
+                <span class="price">$60</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <!--Stripe need images that are uploaded to an online server-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1mpnugqLBApOwzgPz5j_IUBLk_fL0Z7J-Kl2kOxOcIQHzT22h0mHPwNjXxqZRk_SYhEUWqUsiNuXS8yd1nuQXxGNrUEgytwLK3pcswbyhvUQ6Q1iKiu8DnGY35TsSZgiabxzDKsuCMKp1DVuixuflih-afbzgd4tLdOboUQ1AHyVBYFrX4TRKHczoC1WC/s320/product8.jpeg" 
+                alt="" 
+                class="product img">
+                <h2 class="product-title">ULTRABOOST SHOES</h2>
+                <span class="price">$280</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>
