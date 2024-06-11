@@ -103,16 +103,6 @@ function addProductToCart(title, price, productImg) {
     updateCartIcon();
 }
 
-
-
-
-
-
-
-
-
-
-
 //Update Total 
 function updatetotal() {
     var cartContent = document.getElementsByClassName('cart-content')[0];
